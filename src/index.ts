@@ -1,4 +1,5 @@
 import { createApp } from "./lib";
+import chalk from "chalk";
 
 const PORT = parseInt(process.env.PORT || "3000", 10);
 const app = createApp().listen(PORT);
@@ -19,5 +20,5 @@ console.log(
 ⠀⢸⣿⣿⣷⣿⣿⣶⣿⣿⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀
 ⠀⠈⠉⠉⢉⣉⣉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⣉⣉⡉⠉⠉⠁⠀
 ⠀⠀⠀⠀⠉⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠉⠀⠀⠀⠀
-  [+] remotewipe is running on port ${PORT}`
+  ${chalk.green("[+]")} remote.wipe is running on port ${PORT}`
 );
